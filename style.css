@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --main-color: #e4e4e4;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+.bg{
+    background-color: var(--main-color);
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.bx-menu-alt-left{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.back span{
+    font-weight: 500;
+}
+
+.back i{
+    font-size: 24px;
+}
+
+.logo h1{
+    font-size: 48px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.header-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.bxs-shopping-bag{
+    font-size: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bxs-shopping-bag span{
+    font-size: 15px;
+    color: blue;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.header-right span{
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.adv{
+    margin: 3rem 10%;
+}
+
+.adv-content{
+    display: flex;
+    justify-content: center;
+}
+
+.adv-text h1{
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.adv-text h1 span{
+    font-weight: 100;
+}
+
+.adv-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+
+.adv-text p{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 30px;
+    width: 400px;
+}
+
+.adv-text button{
+    background-color: transparent;
+    border: 2px solid blue;
+    color: blue;
+    width: 200px;
+    padding: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.adv-img{
+    width: 50%;
+    text-align: center;
+}
+
+.adv-img img{
+    max-width: 700px;
+}
+
+.adv-content-min{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+.adv-content-min i, .adv-content-min i span{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.adv-content-min p{
+    padding-right: 15%;
+    font-weight: 600;
+}
+
+.adv-content-min hr{
+    position: absolute;
+    right: 6%;
+    height: 1px;
+    background-color: black;
+    width: 100px;
+    bottom: 94%;
+}
+
+main{
+    text-align: center;
+    margin: 3rem 5rem;
+}
+
+.menu{
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.menu a i{
+    font-family: 48px;
+}
+
+.menu a:nth-child(4){
+    color: rgba(0, 0, 0, 0.466);
+}
+
+.main-products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.box{
+    background-color: var(--main-color);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.box img{
+    width: 370px;
+    height: 350px;
+}
+
+.box-text{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+.box-text p{
+    padding-top: 1%;
+    font-weight: 600;
+}
+
+.box-text-titpri{
+    text-align: start;
+}
+
+.box-text-titpri h2{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.box-text-titpri span{
+    font-size: 11px;
+}
+
+footer{ 
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.back-footer{
+    text-align: center;
+    font-size: 36px;
+    width: 33.99%;
+}
+
+.back-footer i{
+    cursor: pointer;
+    background-color: var(--main-color);
+    padding: 1rem;
+    border-radius: 100%;
+}
+
+.button{
+    width: 33.99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button{
+    background-color: var(--main-color);
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 1rem 6rem;
+    cursor: pointer;
+}
+
+.socials{
+    width: 33.99%;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials i{
+    font-size: 26px;
+    background-color: var(--main-color);
+    padding: 1rem;
+    border-radius: 100%;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
